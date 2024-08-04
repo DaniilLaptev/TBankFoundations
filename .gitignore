@@ -1,0 +1,10 @@
+
+# Folders
+looped_transformer-main
+__pycache__
+wandb
+
+# Unneccessary files
+*.bkp
+*.drawio
+*.pt
