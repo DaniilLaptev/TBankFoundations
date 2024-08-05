@@ -23,9 +23,11 @@
 
 ```math
 D = \text{число различных функций } K \times \text{число различных примеров } N_i
+```
 
-\newline
+И представим его в таком виде:
 
+```math
 D = \begin{cases} \mathbf{x}_{1,1} & f(\mathbf{x}_{1,2}) & ... & \mathbf{x}_{1,N_1+1} & f(\mathbf{x}_{1,N_1+1}) \\ ... & ... & ... & ... & ... \\ \mathbf{x}_{K,1} & f(\mathbf{x}_{K,2}) & ... & \mathbf{x}_{K,N_K+1} & f(\mathbf{x}_{K,N_K+1}) \end{cases}
 ```
 
