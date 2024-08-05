@@ -109,7 +109,7 @@ class LoopedTransformer(nn.Module):
         
         pred_list = []
         for i in range(b):
-            output = output + x
+            output = output + x # Input Injection
             for layer in self.layers:
                 output, scores = layer(output, mask)
             prediction = self.out(output)[:, ::2, 0]
