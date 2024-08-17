@@ -34,7 +34,7 @@ class Attention(nn.Module):
     def forward(self, x, mask = None):
         B, T, C = x.size()
         
-        qkv = self.attn(x)
+        qkv = self.attn(x) # [B, T, 3 * hidden_dim]
         q, k, v = qkv.split(self.hidden_dim, dim=2)
         # We transform q, k, v to have shape [B, num heads, T, head size]:
         q = q.view(B, T, self.attn_heads, C // self.attn_heads).transpose(1, 2)
